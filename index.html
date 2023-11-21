@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/b4a1152e0f.js" crossorigin="anonymous"></script>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div id="res">
+            <h1 align="center"><i>Registration Form</i></h1>
+            <form id="user-form">
+                <!-- Name -->
+                <div class="inputField">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Name" required>
+                </div>
+                <!-- Email -->
+                <div class="inputField">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="Email" required>
+                </div>
+                <!-- Password -->
+                <div class="inputField">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Password" required>
+                </div>
+                <!-- DOB -->
+                <div class="inputField">
+                    <label for="dob">DOB</label>
+                    <input id="dob" name="dob" type="date" placeholder="Date of Birth" required>
+                </div>
+                <!-- Terms and conditions -->
+                <div>
+                    <input id="tick_mark" name="tick_mark" type="checkbox" id="checkbox" name="checkbox">
+                    <label for="checkbox">Accept Terms and conditions</label>
+                </div>
+                <!-- Submit button -->
+                <div class="buttonField">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <!-- Table heading -->
+        <h2 align="center"><i>Entries Record</i></h2>
+    </div>
+    <div id="user-entries">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email Address</th>
+                    <th>Password</th>
+                    <th>Date of Birth</th>
+                    <th>Status of Accepted terms</th>
+                </tr>
+            </thead>
+            <tbody id="show_the_date"></tbody>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
